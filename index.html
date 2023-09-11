@@ -1,67 +1,48 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-       
-       <meta name="viewport" content="width=device=width, initial-scale=1.0">
-       <title>AluraBooks</title>
-       <link rell="stylesheet" href="style.css">
-       <link rell="stylesheet" href="reset.css">
-    </head>
-    <body>
-        <h1>AluraBooks</h1>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-   
-    <header class="cabeçalho">
-       <div class="conteainer">
-          <span class="cabeçalho__menu-hamburguer"></span>
-          <img src="img/Logo.svg" alt="Logo da Alurabooks">
+    <title>Alura MIDI</title>
 
-        </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 
-    <div class="container">
+    <link rel="icon" type="image/png" href="images/bateria.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
-        <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"></a>
-        <a href="#"><img src="img/Compras.svg" alt="carrinho de compras"></a>
-        <a href="#"><img src="img/Usuario.svg" alt="Meu perfil"></a>
+</head>
+<body>
 
-    </div>
+    <h1>Alura Midi do Tj</h1>
 
-    </header>
+    <section class="teclado">
+        <button onclick="alert('Pom')" class="tecla tecla_pom">Pom</button>
+        <button onclick="alert('Clap)" class="tecla tecla_clap">Clap</button>
+        <button onclick="alert('Tim')" class="tecla tecla_tim">Tim</button>
 
-    <body>
-        <header class="cabeçalho">
-        <div class="container">
-        <input type="checkbox" id="menu" class="container__botao">
-      <label for="menu">
-          <span class="cabeçalho__menu hamburguer container__imagem"></span>
-      </label>
+        <button onclick="('Puff')"class="tecla tecla_puff">Puff</button>
+        <button onclick="('Splash')" class="tecla tecla_splash">Splash</button>
+        <button onclick="('Toim')" class="tecla tecla_toim">Toim</button>
 
-       <ul class="lista-menu">
-        <li class="lista-menu__titulo">Categorias</li>
-        <li class="lista-menu__item">
-            <a href="#" class="lista-menu__link">Programação</a>
-            </li>
-            <li  class="lista-menu__item">
-               <a href="#" class="lista-menu-link">Front-end</a>
-               </li>
-               <li class="lista-menu__item">
-                <a href="#" class="lista-menu-link">Infraestrutura</a>
-               </li>
-               <li class="lista-menu__item">Business</a>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Desing & UX</a>
-                </li>
-            </ul>
+        <button onclick="('Psh')" class="tecla tecla_psh">Psh</button>
+        <button onclick="('Tic')" class="tecla tecla_tic">Tic</button>
+        <button onclick="('Tom')" class="tecla tecla_tom">Tom</button>
+    </section>
 
+    <audio controls src="sounds/keyq.wav" id="som_tecla_pom"></audio>
+    <audio controls src="sounds/keyw.wav" id="som_tecla_clap"></audio>
+    <audio controls src="sounds/keye.wav" id="som_tecla_tim"></audio>
+    <audio controls src="sounds/keya.wav" id="som_tecla_puff"></audio>
+    <audio  src="sounds/keys.wav" id="som_tecla_splash"></audio>
+    <audio src="sounds/keyd.wav" id="som_tecla_toim"></audio>
+    <audio  src="sounds/keyz.wav" id="som_tecla_psh"></audio>
+    <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
+    <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
 
-       </ul>
-      
-       
-      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
-        
-    </div>
-</header>
-
-    </body>
+</body>
+</html>
